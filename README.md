@@ -7,7 +7,7 @@ This portfolio showcases my projects, skills, and passion for Artificial Intelli
 
 ## 🌐 Live Demo
 
-👉 ****
+👉 **https://krishssah.github.io/portfolio/**
 
 ---
 
