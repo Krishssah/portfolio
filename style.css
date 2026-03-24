@@ -1,0 +1,246 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: #020617;
+    overflow-x: hidden;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* HERO BACKGROUND IMAGE */
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    z-index: -2;
+    opacity: 0.6;
+}
+
+/* DARK OVERLAY */
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 6, 23, 0.6);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* FLOATING ICONS */
+.floating-icons {
+    position: absolute;
+    top: 20px;
+    font-size: 28px;
+    animation: floatIcons 8s linear infinite;
+}
+
+@keyframes floatIcons {
+    0% {transform: translateX(-100px);}
+    100% {transform: translateX(100vw);}
+}
+
+/* ROBOT */
+.robot {
+    width: 100px;
+    margin-top: 20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-15px);}
+    100% {transform: translateY(0);}
+}
+
+/* GLOW TEXT */
+.glow {
+    font-size: 50px;
+    text-shadow: 
+        0 0 10px #38bdf8,
+        0 0 20px #38bdf8,
+        0 0 30px #0ea5e9;
+}
+
+/* BUTTON */
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #38bdf8;
+}
+
+/* SECOND BACKGROUND */
+.section-bg {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+
+    object-fit: cover;
+    object-position: center;
+
+    opacity: 0.2;
+    z-index: -3;
+
+    filter: blur(3px) brightness(0.7);
+}
+
+/* GENERAL SECTIONS */
+section {
+    padding: 60px;
+    text-align: center;
+}
+
+/* SECTION TITLES */
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #38bdf8;
+}
+
+/* SKILLS */
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background: rgba(255,255,255,0.1);
+    padding: 12px 18px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px #38bdf8;
+}
+
+/* PROJECTS */
+.project-card {
+    background: rgba(255,255,255,0.1);
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #0ea5e9;
+}
+
+/* PROJECT LINKS */
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    text-shadow: 0 0 10px #38bdf8;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-icons img {
+    width: 40px;
+    transition: 0.3s;
+    filter: brightness(0.9);
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px #38bdf8)
+            drop-shadow(0 0 20px #0ea5e9);
+}
+
+/* TYPING TEXT */
+.typing {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #38bdf8;
+}
+.about-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-intro {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #cbd5f5;
+}
+
+/* BOX STYLE */
+.about-box {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.about-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #38bdf8;
+}
+
+/* LIST STYLE */
+.about-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-box li {
+    padding: 6px 0;
+    position: relative;
+}
+
+/* CUSTOM BULLET */
+.about-box li::before {
+    content: "➤";
+    color: #38bdf8;
+    margin-right: 8px;
+}
